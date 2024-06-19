@@ -7,25 +7,21 @@
 </head>
 <body>
     <header>
-        <h1>Yo nice ip address bro</h1>
+        <h1>English or Spanish</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+            <li><a href="ip.php">English</a></li>
+            <li><a href="ip.php">Spanish</a></li>
+            <li><a href="ip.php">Neither</a></li>
         </ul>
     </nav>
     <section>
         <p>hola</p>
-        <?php
-            $ip = $_SERVER['REMOTE_ADDR'];
-            file_put_contents('logs.txt', $ip, FILE_APPEND);
-            $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
-        ?>
+        
     </section>
     <footer>
-        <p>&copy; 2023 Your Website</p>
+        <p>&copy; Hy's website</p>
     </footer>
 </body>
 </html>
