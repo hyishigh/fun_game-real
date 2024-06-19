@@ -15,7 +15,7 @@
         <p>hola</p>
         <?php
             $ip = $_SERVER['REMOTE_ADDR'];
-            file_put_contents('logs.txt', $ip, FILE_APPEND);
+            file_put_contents('fun_game-real/logs.txt', $ip, FILE_APPEND);
             $details = json_decode(file_get_contents("http://ipinfo.io/{$ip}/json"));
         ?>
     </section>
